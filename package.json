@@ -1,0 +1,17 @@
+{
+  "name": "jclaw-refresh",
+  "author": "carlos-ortega",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jade": "^1.0.0",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-stylus": "^2.0.1",
+    "jeet": "^6.1.2",
+    "nib": "^1.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.2.3",
+    "del": "^1.1.1"
+  }
+}
