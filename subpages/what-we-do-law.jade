@@ -1,0 +1,63 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 What We Do
+				p.crumb
+					<a href='/'>Home</a> &gt; What We Do &gt; Law
+
+			.subnav
+				a(href="what-we-do-overview.html") Assurance
+				a(href="what-we-do-tax.html") Tax
+				a.active(href="what-we-do-law.html") Law
+				a(href="what-we-do-asian.html") Asian Practice
+				a(href="what-we-do-startup.html") Startup Consulting
+
+			.subpage-intro
+				p With a professional base of Attorneys and CPAs and some with dual qualifications to handle cross-over issues, we provide a range of legal advice in Tax Litigation, Estate Planning, and Business.
+				img(src="img/subpages/law.jpg")
+
+
+			.page-container
+				.sidebar
+					h4 How we can help
+					ul
+						li IRS and State Tax Audits and Appeals
+						li Offer in Compromise and Lien Release
+						li Tax Litigation
+				.page-content
+					h3 Tax Controversies and Litigation
+					p JC&amp;Company represents clients in all aspects of controversies with the federal, state and local tax authorities. We handle audits, coordinated exams, administrative appeals, and both civil and criminal tax cases in federal and state courts.
+
+
+			.page-container
+				.sidebar
+					h4 How we can help
+					ul
+						li Wills
+						li Revocable Living Trusts
+						li ILITs, QTIP, GRAT, IDGT and Trust Administration
+
+				.page-content
+					h3 Trust and Estate Tax Planning
+					p Our trust and estate planning practice concentrates on using innovative planning techniques to fulfill our clients’ dispositive goals and to reduce and eliminate taxes. We assist our clients in planning trusts and estates, conveying the family owned corporations and other business interests to children, making charitable donations, and administering their trusts and estates.
+
+			.page-container
+				.sidebar
+					h4 How we can help
+					ul
+						li Drafting Contracts and Agreement
+						li Entity Selection and Formation
+						li Business Immigration (H -1B, L-1, E-2, Green Card, etc)
+				.page-content
+					h3 Business and Immigration
+					p A successful business depends largely upon careful preparation and operation of business with appropriate legal advice. We assist our clients on every aspect of their business, ranging from drafting agreements on day-to-day operation to handling their immigration matters.
+
+			p.attr Legal services are provided by JC&amp;Company Law Firm, which is a separate and distinct entity from JC&amp;Company LLP.
+
+block scripts
+	script.
+		$(function(){
+			$('.nav').find('.link-what-we-do').addClass('active');
+		});

@@ -1,0 +1,44 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 What We Do
+				p.crumb
+					<a href='/'>Home</a> &gt; What We Do &gt; Asian Practice
+
+			.subnav
+				a(href="what-we-do-overview.html") Assurance
+				a(href="what-we-do-tax.html") Tax
+				a(href="what-we-do-law.html") Law
+				a.active(href="what-we-do-asian.html") Asian Practice
+				a(href="what-we-do-startup.html") Startup Consulting
+
+			.subpage-intro
+				p Throughout the global marketplace, Asian companies are seeking ways to address emerging trends and manage risk driven by economic uncertainty, and this can be especially challenging for Asian companies in the United States.
+				img(src="img/subpages/asian-practice.jpg")
+
+
+			.page-container
+				.sidebar
+					h4 How we can help
+					ul
+						li Compliance with multiple tax jurisdictions
+						li Implementation of transfer pricing policies
+						li IFRS conversion
+						li Initial Public Offerings (IPOs) in U.S. or Asian Markets.
+						li Due diligence and structuring advice in cross-border M&amp;A
+
+
+				.page-content
+					p These companies also must deal with the evolving U.S. regulatory environment, compliance across multiple tax jurisdictions, transfer pricing issues, and the looming transition to IFRS. This is where the insight and guidance of a skilled adviser can help.
+
+					h3 We are a global network of bilingual professionals
+
+					p.last-of-page Our professionals are dedicated to providing personalized service for our Asian clients around the world. We are made up of experienced men and women with in-depth knowledge of both the Americas and Asian corporate environments, gained through hands-on experience of serving major clients. With substantial experience with many reputable Asian companies, JC&amp;Company's professionals understand the relationships between U.S. operations, foreign parent companies, and global affiliates, and can provide a broad range of Audit, Tax and Advisory services to Asian companies operating in the U.S.
+
+block scripts
+	script.
+		$(function(){
+			$('.nav').find('.link-what-we-do').addClass('active');
+		});

@@ -1,0 +1,62 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 What We Do
+				p.crumb
+					<a href='/'>Home</a> &gt; What We Do &gt; Startup Consulting
+
+			.subnav
+				a(href="what-we-do-overview.html") Assurance
+				a(href="what-we-do-tax.html") Tax
+				a(href="what-we-do-law.html") Law
+				a(href="what-we-do-asian.html") Asian Practice
+				a.active(href="what-we-do-startup.html") Startup Consulting
+
+			.subpage-intro
+				p We are committed to understanding startups and the community, and we focus on building a long-term relationship with each startup and taking each step to help our entrepreneurs create a successful startup in the U.S.
+				img(src="img/subpages/startup.jpg")
+
+
+			.page-container
+				.sidebar
+					h4 How we can help
+					ul
+						li Startup entity counseling
+						li Startup formation, maintenance and dissolution
+						li Angel/seed round financing
+						li Debt and equity transactions for privately held companies
+						li CFO and Controller Outsourcing
+						li Venture capital financing
+						li Stock compensation and option plans
+						li Joint ventures and strategic partnerships
+
+
+				.page-content
+					p At JC&amp;Company, we provide assistance to companies faced with opportunities for growth such as a merger or acquisition, or critical challenges such as fraud, litigation or reorganization. Our professionals combine technical, market, and business skills that allow them to deliver objective advice and guidance that help the firm's clients grow their businesses, improve their performance, and manage risk more effectively. We serve companies throughout the business lifecycle, helping them in their efforts to emerge stronger and smarter.
+
+					h3 We bring deep expertise to our clients
+
+					p At JC&amp;Company, we provide assistance to companies faced with opportunities for growth. We are committed to the growth of the entrepreneurial and startup community. Our attorneys are experienced in the formation of corporate entities to allow for growth, venture capital financing, angel financing, acquisition in the United States. Also, our professionals combine technical, market, and business skills that allow them to deliver objective advice and guidance that help the startup companies improve their performance.
+
+					h3 Our Client&rsquo;s Testimonial
+					blockquote
+						p We need our attorney to be utterly truthful with us and keep us on the right track, and we can absolutely depend on JC&amp;Company to fulfill that responsibility and look forward to a long-lasting relationship in our U.S. business. This is especially so as they are both law and accounting firm and we can get the one-stop legal and accounting service from them. Needless to say, it worked so efficiently so far and saved our time and costs.
+						cite Sunguk Moon, CEO, Teamblind Inc
+
+					blockquote
+						p I was truly glad that I finally found a law firm I can trust and depend on, and this was especially important to me because, although our parent company had good reputation and resources in Korea, the business in the U.S. was completely new to me and all my company members. Simply put, They are impeccable professionals.
+						cite Yeonji Lee, Manager, AfreecaTV Co., Ltd
+
+					blockquote.last-of-page
+						p JC&amp;Company was the firm we engaged for our due diligence project in the United States for our potential reverse merger. It was an easy decision. They are outstanding with their in-depth knowledge in the issues and with their strong professionalism.
+						cite John Kim, Director of Global Tax, Coupang
+
+
+
+block scripts
+	script.
+		$(function(){
+			$('.nav').find('.link-what-we-do').addClass('active');
+		});

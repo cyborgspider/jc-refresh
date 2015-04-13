@@ -1,0 +1,61 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 Who We Are
+				p.crumb
+					<a href='/'>Home</a> &gt; <a href='who-we-are-overview.html'>Who We Are</a> &gt; Our Clients
+
+			.subnav
+				a(href="who-we-are-overview.html") Overview
+				a(href='who-we-are-values.html') Our Values
+				a.active(href='#') Our Clients
+
+			//- .subpage-intro
+			//- 	p We help our clients’ business grow in a challenging economy by minimizing risk, minimizing taxes, improving profitability, streamlining internal control, managing technology, and by maximizing opportunities.
+			//- 	img(src="img/subpages/handshake.jpg")
+
+
+			.image-list
+				img(src='img/clients/01_lg_display.png', alt='')
+				img(src='img/clients/02_LG-International-logo.png', alt='')
+				img(src='img/clients/03_Woori-Bank.png', alt='')
+				img(src='img/clients/04_keb.png', alt='')
+				img(src='img/clients/05_saehan_logo.png', alt='')
+				img(src='img/clients/06_SK_Hynix_logo.png', alt='')
+				img(src='img/clients/07_Openbank_logo.png', alt='')
+				img(src='img/clients/08_SK_Telecom_Logo.png', alt='')
+				img(src='img/clients/09_skecBig.png', alt='')
+				img(src='img/clients/11_hanwha.png', alt='')
+				img(src='img/clients/12_Hanwha_Q_CELLS_Logo.png', alt='')
+				img(src='img/clients/13_Hanwha_CI.png', alt='')
+				img(src='img/clients/14_sgi_holdings.png', alt='')
+				img(src='img/clients/15_afreecatv.png', alt='')
+				img(src='img/clients/16_teamblind.png', alt='')
+				img(src='img/clients/17_kt_capital.png', alt='')
+				img(src='img/clients/18_Hanjin_logo.png', alt='')
+				img(src='img/clients/19_aif_logo.png', alt='')
+				img(src='img/clients/20_food_20131004b_eng.png', alt='')
+				img(src='img/clients/21_tous_logo.png', alt='')
+				img(src='img/clients/22_paris1.png', alt='')
+				img(src='img/clients/23_coupang-logo.png', alt='')
+				img(src='img/clients/24_LOTTE.png', alt='')
+				img(src='img/clients/25_logo_palmco.png', alt='')
+				img(src='img/clients/26_Logo_DeWind_rgb_freigestellt.png', alt='')
+				img(src='img/clients/28_Neowiz-1.png', alt='')
+				img(src='img/clients/29_LiquidmetalTechnologies.png', alt='')
+				img(src='img/clients/30_Poongsan.png', alt='')
+				img(src='img/clients/31_Cap-America-logo-rgb.png', alt='')
+				img(src='img/clients/32_Kotra_logo.png', alt='')
+				img(src='img/clients/33_sbs_logo.png', alt='')
+				img(src='img/clients/34_neoflam.png', alt='')
+				img(src='img/clients/36_KITA.png', alt='')
+				img(src='img/clients/37_logo.png', alt='')
+				img(src='img/clients/38_logo_onescreen.png', alt='')
+
+block scripts
+	script.
+		$(function(){
+			$('.nav').find('.link-who-we-are').addClass('active');
+		});

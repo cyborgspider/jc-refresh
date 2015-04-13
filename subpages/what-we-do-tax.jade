@@ -1,0 +1,62 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 What We Do
+				p.crumb
+					<a href='/'>Home</a> &gt; What We Do &gt; Tax
+
+			.subnav
+				a(href="what-we-do-overview.html") Assurance
+				a.active(href="what-we-do-tax.html") Tax
+				a(href="what-we-do-law.html") Law
+				a(href="what-we-do-asian.html") Asian Practice
+				a(href="what-we-do-startup.html") Startup Consulting
+
+			.subpage-intro
+				p Through a forward thinking multidisciplinary approach and deep industry knowledge, we help you comply with increasingly complex tax regulations, and help optimize their impact on your business.
+				img(src="img/subpages/tax.jpg")
+
+
+			.page-container
+				.sidebar
+					h4 How we can help
+					ul
+						li Tax Compliance and Preparation
+						li Tax Research and Strategic Tax Planning
+						li International Tax Planning and Compliance
+						li M&amp;A Tax Planning and Analysis
+						li Transfer Pricing
+						li Cost Segregation
+						li R&amp;D and other business tax credits
+						li IFRS Tax Accounting
+						li SEC Tax Accounting
+						li State and Local Taxes
+						li Representation before the IRS and other Tax Authorities
+						li Trust and Estate Tax Planning
+						li
+							a(href='/fbar') FBAR/FATCA
+						li
+							a(href='http://jcwealthmgnt.com') Trust and Estate Tax Planning
+						li
+							a.modal-link(href='#modal-rd') R&amp;D Tax Credit
+						li
+							a.modal-link(href='#modal-enterprise') Enterprise Zone
+						li
+							a.modal-link(href='#modal-other') Other Tax Inventives
+
+				.page-content
+					p At JC&amp;Company, we provide high quality service which emphasizes proactive, creative tax analysis, and year-round tax planning. We are focused on identifying and maximizing clients' federal, state and international tax-saving opportunities. We have a breadth of tax expertise second to none in our target markets, which gives our tax practice a span of focus rarely found servicing middle market companies and their owners. We also serve a variety of personal tax planning and compliance needs for various corporate executives and high net worth individuals.
+
+
+
+					h3 Tax Compliance and Strategy – We Advise and We Plan
+
+					p.last-of-page We use our experience and expertise to be proactive business professionals for our clients; an integral part of the company management team. We think strategically, lawfully, and aggressively for improved client performance.
+
+block scripts
+	script.
+		$(function(){
+			$('.nav').find('.link-what-we-do').addClass('active');
+		});
