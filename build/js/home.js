@@ -7,7 +7,7 @@ $(function(){
                 thumb: true
             },
             facebook: {
-                id: '1394483740809502'
+                id: '1595731843999687'
             },
             youtube: {
                 id: 'UC2A6gNuULMFPd107sGowphg'
