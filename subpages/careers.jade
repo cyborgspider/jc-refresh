@@ -1,0 +1,42 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 Careers
+				p.crumb
+					<a href='/'>Home</a> &gt; Careers
+
+			ul.careers-content
+				li.first
+					h2 Please send your resume with a cover letter using one of the following methods:
+					table
+						tbody
+							tr
+								td Email:
+								td <a href="mailto:hr@jclawcpa.com">hr@jclawcpa.com</a>
+							tr
+								td Tel:
+								td 949-554-1110
+							tr
+								td Fax:
+								td 949-485-4900
+							tr
+								td Office:
+								td JC&amp;Company LLP<br>Human Resources Department<br>10 Corporate Park, Ste. 210,<br>Irvine, CA 92606
+
+				li.second
+					p At JC&amp;Company, our people drive our passion for the business. Discover a place where you’ll work with a team of professionals dedicated to providing bold leadership and distinctive client service. Spend each day engaged in meaningful and challenging work.
+				li.third
+					p We offer a diverse and collaborative environment that respects individual needs and promotes ongoing development.
+
+					p At JC&amp;Company, our clients and our professionals are a priority. We set high professional standards and we recruit based on those standards.
+				li.fourth
+					p Be supported in your professional growth and recognized for your contributions.
+			.cl
+
+block scripts
+	script.
+		$(function(){
+			$('.nav').find('.link-careers').addClass('active');
+		});

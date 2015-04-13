@@ -1,0 +1,50 @@
+.careers-content
+	min-height 760px
+	margin     0
+	padding    0
+	list-style none
+	clearfix()
+
+	h2
+		font-size      15px
+		border-bottom  dotted 1px #5a5a5a
+		padding-bottom 1rem
+		margin-bottom  1rem
+		margin-top     0
+
+	table
+		font-size 12px
+		line-height 22px
+		margin-left 34px
+
+	td
+		vertical-align top
+		text-align     right
+
+	td + td
+		text-align   left
+		padding-left 23px
+
+	& > li
+		column(1/2, cycle:2)
+		box-sizing  border-box
+		padding     1.5rem
+
+		&.first
+			color #576c7e
+
+		&.second
+			background #7f90a0
+			color      #fff
+			font       18px/1.7 'Georgia', serif
+
+		&.third
+			color       #576c7e
+			background  #e5eaee
+			font-size   18px
+			line-height 24px
+
+		&.fourth
+			background #576c7e
+			color      #fff
+			font       18px/1.7 'Georgia', serif
