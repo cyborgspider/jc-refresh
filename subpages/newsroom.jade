@@ -1,0 +1,25 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 Newsroom
+				p.crumb
+					<a href='/'>Home</a> &gt; Newsroom
+
+			p Welcome to JC&amp;Company&rsquo;s Newsroom where you will find a variety of resources to keep you up-to-date on firm happening. In our Newsroom, you will find the current news releases we bring here and create with an insightful analysis.
+			p.last-of-page If you want to stay connected with JC&amp;Company in other ways, we encourage you to "LIKE" our Facebook page, follow JC&amp;Company in LinkedIn page and follow our Twitter. We hope to see you out there.
+
+			#news-body
+
+
+
+
+block scripts
+	script(src='js/jquery.social.stream.1.5.9.min.js')
+	script(src='js/jquery.social.stream.wall.1.6.js')
+	script(src='js/newsroom.js')
+	script.
+		$(function(){
+			$('.nav').find('.link-newsroom').addClass('active');
+		});
