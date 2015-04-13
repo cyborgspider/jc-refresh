@@ -1,0 +1,71 @@
+.logo
+	image   '../img/logo.png' 265px 52px
+	width   265px
+	height  52px
+	display block
+	float   left
+
+.fbar-wrap
+	float      right
+	margin-top 20px
+	width      60%
+
+.logo-fbar
+	border     2px solid $gold
+	color      $gold
+	float      right
+	margin-top -2px
+	display    block
+
+	& > span
+		border-right 2px solid $gold
+		padding      3px
+
+		&:last-child
+			border-right none
+
+.fbar-nav
+	position   relative
+
+.fbar-text
+	color      $gold
+	display    none
+	position   absolute
+	right      104px
+	text-align right
+
+	&:first-child
+		display block
+
+	& > a
+		color white
+
+.nav
+	font-family    'Noto Sans', 'Century Gothic', sans-serif
+	font-weight    700
+	color          white
+	list-style     none
+	margin         0
+	padding        0
+	text-transform uppercase
+	font-size      16px
+
+	& > li
+		border-right 1px solid #818181
+		text-align   center
+		display      inline-block
+		margin       14px 0
+
+		&:last-child
+			border-right none
+
+	& > li > a
+		color      white
+		padding    0 48px
+		transition color 0.2s ease-in-out
+		display    block
+
+		&:hover
+			color $blue_hover
+
+

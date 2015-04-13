@@ -1,0 +1,75 @@
+.cycle-slideshow
+	margin-left -80px
+
+.slideshow
+	height   360px
+	width    1024px
+	position relative
+	margin   0 auto 25px
+
+.slide-text
+	position absolute
+	right    -30px
+	z-index  100
+	top      90px
+	color    white
+	width    250px
+
+	& > .title
+		font-family    'Noto Sans', 'Century Gothic', sans-serif
+		font-size      24px
+		font-weight    700
+		text-transform uppercase
+		margin-bottom  1em
+
+	& > .desc
+		margin-bottom 1em
+
+	& > .details
+		color   white
+		display block
+
+.page
+	background    #91c9ec
+	width         12px
+	height        12px
+	border-radius 50%
+	display       inline-block
+	margin-right  8px
+
+	&:first-child
+		margin-left 8px
+
+	&.cycle-pager-active
+		background white
+
+.slide-pager
+	display inline-block
+
+.slide-controls
+	position absolute
+	right    40px
+	bottom   40px
+	z-index  1000
+	cursor   pointer
+
+.slide-left
+.slide-right
+	background url(../img/slide-ctrl.png) no-repeat
+	width      16px
+	height     18px
+	position   relative
+	top        4px
+	cursor     pointer
+
+.slide-left
+	background-position 0 0
+	display inline-block
+	&:hover
+		background-position -16px 0
+
+.slide-right
+	background-position -33px 0
+	display inline-block
+	&:hover
+		background-position -49px 0

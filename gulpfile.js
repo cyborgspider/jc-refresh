@@ -25,7 +25,7 @@ gulp.task('style', function(){
 
 gulp.task('jade', function(){
 	 return gulp
-		  .src(!'./inc.*.jade', './*.jade')
+		  .src(['!inc.*.jade', '*.jade'])
 		  .pipe($.jade())
 		  .pipe(gulp.dest('./build'))
 });
@@ -37,11 +37,14 @@ gulp.task('clean', function(){
 
 gulp.task('copy', function(){
 	gulp
-		.src('./scripts/scripts.js')
+		.src('./scripts/*.js')
 		.pipe(gulp.dest('./build/js/'));
 	gulp
-		.src('./images/*')
+		.src('./images/**/*')
 		.pipe(gulp.dest('./build/img/'));
+	gulp
+		.src('./*.php')
+		.pipe(gulp.dest('./build'));
 });
 
 gulp.task('default', ['jade', 'style', 'copy'], function(){
