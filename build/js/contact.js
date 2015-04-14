@@ -46,42 +46,42 @@ function Valid()
 		form.email.focus();
 		return false;
 	}
-	else if(form.phone.value == "")
-	{
-		alert("Please Input Your Phone Number.");
-		form.phone.focus();
-		return false;
-	}
-	else if(form.company.value == "")
-	{
-		alert("Please Input Your Compnay Name.");
-		form.company.focus();
-		return false;
-	}
-	else if(form.street.value == "")
-	{
-		alert("Please Input Your Street Address.");
-		form.street.focus();
-		return false;
-	}
-	else if(form.City.value == "")
-	{
-		alert("Please Input Your City.");
-		form.city.focus();
-		return false;
-	}
-	else if(form.zipcode.value == "")
-	{
-		alert("Please Input Your Zipcode.");
-		form.zipcode.focus();
-		return false;
-	}
-	else if(form.comments.value == "")
-	{
-		alert("Please Input Comments.");
-		form.comments.focus();
-		return false;
-	}
+	// else if(form.phone.value == "")
+	// {
+	// 	alert("Please Input Your Phone Number.");
+	// 	form.phone.focus();
+	// 	return false;
+	// }
+	// else if(form.company.value == "")
+	// {
+	// 	alert("Please Input Your Compnay Name.");
+	// 	form.company.focus();
+	// 	return false;
+	// }
+	// else if(form.street.value == "")
+	// {
+	// 	alert("Please Input Your Street Address.");
+	// 	form.street.focus();
+	// 	return false;
+	// }
+	// else if(form.City.value == "")
+	// {
+	// 	alert("Please Input Your City.");
+	// 	form.city.focus();
+	// 	return false;
+	// }
+	// else if(form.zipcode.value == "")
+	// {
+	// 	alert("Please Input Your Zipcode.");
+	// 	form.zipcode.focus();
+	// 	return false;
+	// }
+	// else if(form.comments.value == "")
+	// {
+	// 	alert("Please Input Comments.");
+	// 	form.comments.focus();
+	// 	return false;
+	// }
 	else if(form.comments.value.length > 500)
 	{
 		alert("Maximum 500 Characters.");

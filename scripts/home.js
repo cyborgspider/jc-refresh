@@ -10,7 +10,7 @@ $(function(){
                 id: '1595731843999687'
             },
             youtube: {
-                id: 'UC2A6gNuULMFPd107sGowphg'
+                id: 'id'
             }
         },
         rotate: {
@@ -22,6 +22,8 @@ $(function(){
         wall: true,
         cache: false,
         max: 'limit',
+        external:true,
+        order: 'random',
         limit: 2,
         transition: '0.3s',
         iconPath: 'img/dcsns-dark/',
