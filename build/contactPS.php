@@ -116,10 +116,10 @@ $SenderAddr = $_REQUEST['email'];
 
 $mailheader = "";
 $mailheader .= "X-Priority: 1\n"; // Urgent message!
-$mailheader .= "X-Sender: <" . $SenderAddr . ">\n"; 
+$mailheader .= "X-Sender: <" . $SenderAddr . ">\n";
 $mailheader .= "Return-Path: " . $SenderAddr . "\r\n";
 $mailheader .= "From: " . iconv("UTF-8","UTF-8",$_REQUEST['first_name']) . " " . $_REQUEST['last_name'] . "<" . $SenderAddr . ">\r\n";
-$mailheader .= "X-Mailer: Gfew Interface\r\n";      
+$mailheader .= "X-Mailer: Gfew Interface\r\n";
 $mailheader .= "Content-Type: text/html; charset=UTF-8\r\n";
 //$mailheader .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
 $mailheader .= "Content-Transfer-Encoding: base64\r\n\r\n";
@@ -135,5 +135,5 @@ $mail_ok=mail("josh.chung@jclawcpa.com",iconv("UTF-8","UTF-8",$MailTitle),strips
 $mail_ok=mail("info@jclawcpa.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
 $mail_ok=mail("hr@jclawcpa.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
 
-$JFunction->goPage($goUrl="http://www.jclawcpa.com/contact-us.html", $target='self.', $alert="Mail Sent.", $addScript="") 
+$JFunction->goPage($goUrl="http://www.jclawcpa.com/v2/thank-you.html", $target='self.', $alert="Mail Sent.", $addScript="")
 ?>

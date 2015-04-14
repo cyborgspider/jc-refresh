@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><title>JC &amp; Company</title><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"><link href="css/styles.css" rel="stylesheet"></head><body><div class="wrap bg-top-nav"><div class="container"><a href="/" class="logo"></a><div class="fbar-wrap"><div class="fbar-nav"><div class="fbar-text">IRS Amnesty Program - Never reported a foreign account?</div><div class="fbar-text">JC &amp; Company represents dozens of taxpayers who are voluntarily disclosing over $100 million in foreign bank accounts and assets to the IRS</div><div class="fbar-text">To learn more about JC &amp; Company's FBAR ㅣ FATCA services, visit our website at <a href="/fbar">jclawcpa.com/fbar</a></div></div><a href="/fbar" class="logo-fbar"><span>FBAR</span><span>FATCA</span></a></div></div></div><div class="wrap bg-nav"><div class="container"><ul class="nav"><li><a href="who-we-are-overview.html" class="link-who-we-are">Who We Are</a></li><li><a href="what-we-do-assurance.html" class="link-what-we-do">What We Do</a></li><li><a href="newsroom.html" class="link-newsroom">Newsroom</a></li><li><a href="careers.html" class="link-careers">Careers</a></li><li><a href="contact-us.html" class="link-contact-us">Contact Us</a></li></ul></div></div><div class="wrap"><div class="container"><div class="header-wrap"><h2>Contact Us</h2><p class="crumb"><a href='/'>Home</a> &gt; Contact Us</p></div><div class="page-container"><div class="locations-sidebar"><ul class="locations-list"><li><h2>Irvine</h2><p>10 Corporate Park, Ste. 210, Irvine CA 92606</p><p>Phone <span>949.553.1110</span></p><p>Fax <span> 949.485.4900</span></p><p>Email. info@jclawcpa.com</p><a href="http://maps.google.com/maps?q=38+Corporate+Park,+Irvine,+CA+92606+&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=80.692593,124.013672&amp;z=17" target="_blank">view map</a></li><li><h2>Los Angeles</h2><p>4801 Wilshire Blvd. Ste. 306</p><p> Los Angeles, CA 90010</p><p>Phone <span>213.293.9110</span></p><p>Fax <span> 213.973.4720</span></p><a href="http://maps.google.com/maps?q=3600+Wilshire+Blvd.+suite+2036&amp;hl=en&amp;sll=33.688791,-117.827418&amp;sspn=0.010784,0.015138&amp;z=17" target="_blank">view map</a></li><li><h2>Northeast Regional Office</h2><p>1830 Easton Ave. Somerset</p><p>NJ 08873</p><a href="http://maps.google.com/maps?q=1830+Easton+Ave.+Somerset&amp;hl=en&amp;sll=34.06153,-118.303463&amp;sspn=0.010737,0.015138&amp;z=17" target="_blank">view map</a></li></ul></div><div class="contact-form"><h3>Thank You for your business! We look forward to speaking with you soon.</h3></div></div></div></div><div class="wrap bg-footer"><div class="container"><div class="footer"><div class="footer-left"><p>JC&amp;Company LLP - A full scope audit, tax, and advisory services firm with serious Big 4 experience.<br>&copy; 2013 JC&amp;Company LLP.  All rights reserved.</p><p><strong>Irvine.</strong> 10 Corporate Park, Ste. 210, Irvine CA 92606  |  Phone. 949.553.1110  |  Fax. 949.485.4900<br><strong>Los Angeles.</strong> 4801 Wilshire Blvd. Ste. 306, Los Angeles, CA 90010  |  Phone. 213.293.9110 |  Fax. 213.973.4720<br><strong>Northeast Regional Office.</strong> 1830 Easton Ave. Somerset, NJ 08873</p></div><?
+include_once ($_SERVER['DOCUMENT_ROOT'] . "/Classes/Init.class.php");
+include_once ($_SERVER['DOCUMENT_ROOT'] . "/Classes/class.db/db_mysql.inc.php");
+include_once ($_SERVER['DOCUMENT_ROOT'] . "/Classes/class.db/db_local.mysql.inc.php");
+include_once ($_SERVER['DOCUMENT_ROOT'] . "/Classes/HtmlUtil.class.php");
+include_once ($_SERVER['DOCUMENT_ROOT'] . "/Classes/JC.class.php");
+
+$JC = new JC();
+
+?>
+<script type="text/javascript">
+<!--
+	function checkValid()
+	{
+		if(document.getElementById("email_address").value == "" || document.getElementById("email_address").value == "Your Email Address")
+		{
+			alert("Enter Your Email Address");
+			document.getElementById("email_address").value = "";
+			document.getElementById("email_address").focus();
+			return false;
+		}
+		else
+		{
+			//alert("Sorry! We're not ready!");
+			//return false;
+			return true;
+		}
+	}
+
+	function setInit()
+	{
+		if(document.getElementById("mce-EMAIL").value == "Your Email Address")
+		{
+			document.getElementById("mce-EMAIL").value = "";
+		}
+	}
+//-->
+</script>
+	<div class="footer-right">
+<!--                 <form name="frmEmail" action="subscribeLetterPS.php" method="post" onsubmit="return checkValid();">
+ -->
+	    <form action="http://facebook.us3.list-manage.com/subscribe/post?u=8b2644704240c22e1e44ed546&amp;id=f39a7980e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <p>Subscribe to Newsletter</p>
+	    <input type="email" value="Your Email Address" name="EMAIL" class="required email input-text" id="mce-EMAIL" onclick="setInit();" />
+	    <div style="position: absolute; left: -5000px;"><input type="text" name="b_8b2644704240c22e1e44ed546_f39a7980e1" value=""></div>
+	    <input class="input-submit" type="submit" id="mc-embedded-subscribe" value="Subscribe" />
+	    </form>
+	    <div class="cl"></div>
+	    <div class="social">
+	      <p>Follow us on</p>
+	      <a href="http://www.facebook.com/jclawcpa" target="_blank"><img src="img/social-fb.png" /></a>
+	      <a href="https://twitter.com/JC_LawCPA" target="_blank"><img src="img/social-twitter.png" /></a>
+	      <a href="https://www.youtube.com/channel/UC2A6gNuULMFPd107sGowphg" target="_blank"><img src="img/social-youtube.png" /></a>
+	      <a href="http://jclawcpa.com/images/48-icon-linkedin.png" target="_blank"><img src="img/social-linkedin.png" /></a>
+	      </div>
+	</div>
+</div></div></div><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="js/global.js"></script><script src="js/contact.js"></script><script>$(function(){
+	$('.nav').find('.link-contact-us').addClass('active');
+});</script></body></html>

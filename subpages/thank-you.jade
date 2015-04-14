@@ -1,0 +1,44 @@
+extends ../inc.layout.jade
+block content
+	.wrap
+		.container
+			.header-wrap
+				h2 Contact Us
+				p.crumb
+					<a href='/'>Home</a> &gt; Contact Us
+
+
+			.page-container
+				.locations-sidebar
+					ul.locations-list
+						li
+							h2 Irvine
+							p 10 Corporate Park, Ste. 210, Irvine CA 92606
+							p Phone <span>949.553.1110</span>
+							p Fax <span> 949.485.4900</span>
+							p Email. info@jclawcpa.com
+							a(href='http://maps.google.com/maps?q=38+Corporate+Park,+Irvine,+CA+92606+&hl=en&sll=37.0625,-95.677068&sspn=80.692593,124.013672&z=17', target='_blank') view map
+
+						li
+							h2 Los Angeles
+							p 4801 Wilshire Blvd. Ste. 306
+							p  Los Angeles, CA 90010
+							p Phone <span>213.293.9110</span>
+							p Fax <span> 213.973.4720</span>
+							a(href='http://maps.google.com/maps?q=3600+Wilshire+Blvd.+suite+2036&hl=en&sll=33.688791,-117.827418&sspn=0.010784,0.015138&z=17', target='_blank') view map
+
+						li
+							h2 Northeast Regional Office
+							p 1830 Easton Ave. Somerset
+							p NJ 08873
+							a(href='http://maps.google.com/maps?q=1830+Easton+Ave.+Somerset&hl=en&sll=34.06153,-118.303463&sspn=0.010737,0.015138&z=17', target='_blank') view map
+
+				.contact-form
+					h3 Thank You for your business! We look forward to speaking with you soon.
+
+block scripts
+	script(src='js/contact.js')
+	script.
+		$(function(){
+			$('.nav').find('.link-contact-us').addClass('active');
+		});
