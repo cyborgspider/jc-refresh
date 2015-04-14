@@ -127,9 +127,6 @@ $mailheader .= "Content-Transfer-Encoding: base64\r\n\r\n";
 //test
 $mail_ok=mail("pure4499@gmail.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
 
-
-$mail_ok=mail("freshsean@gmail.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
-
 $mail_ok=mail("jchung@jclawcpa.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
 $mail_ok=mail("josh.chung@jclawcpa.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
 $mail_ok=mail("info@jclawcpa.com",iconv("UTF-8","UTF-8",$MailTitle),stripslashes(chunk_split(base64_encode(iconv("UTF-8","UTF-8",$MailDesc)))),$mailheader);
