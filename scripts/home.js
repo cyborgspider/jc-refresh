@@ -25,7 +25,7 @@ $(function(){
         max: 'limit',
         external:true,
         order: 'random',
-        limit: 2,
+        limit: 1,
         transition: '0.3s',
         iconPath: 'img/dcsns-dark/',
         imagePath: 'img/dcsns-dark/'
