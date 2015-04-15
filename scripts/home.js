@@ -10,7 +10,8 @@ $(function(){
                 id: '1394483740809502'
             },
             youtube: {
-                id: 'UC2A6gNuULMFPd107sGowphg'
+                id: 'UC2A6gNuULMFPd107sGowphg',
+                feed:'uploads'
             }
         },
         rotate: {
