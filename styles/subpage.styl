@@ -36,6 +36,47 @@
 		float      right
 		margin-top 10px
 
+.testimonial-section
+	clearfix()
+	margin     0
+	padding    0
+	list-style none
+	
+	& > li
+		background $blue
+		color      white
+		padding    2em
+		overflow   hidden
+		
+		&:nth-child(even)
+			background white
+			color      #000
+			
+			& > .right-col > cite
+				border-color #ccc
+		
+	& > li > .left-col
+		column(1/4)
+		text-align center
+		
+	& > li > .left-col > p
+		margin 0
+	
+	& > li > .right-col
+		column(3/4)
+		
+	& > li > .right-col > p	
+		text-indent -.4em
+		margin 0 0 1em
+		
+	& > li > .right-col > cite
+		display     block
+		border-top  solid 1px white
+		font-style  italic	
+		text-align  right
+		padding-top 1em	
+
+
 .image-list
 	width  100%
 	margin 20px auto 50px

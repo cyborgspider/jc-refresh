@@ -7,10 +7,11 @@ $(function(){
                 thumb: true
             },
             facebook: {
-                id: '1595731843999687'
+                id: '1394483740809502'
             },
             youtube: {
-                id: 'id'
+                id: 'UC2A6gNuULMFPd107sGowphg',
+                feed:'uploads'
             }
         },
         rotate: {
@@ -24,7 +25,7 @@ $(function(){
         max: 'limit',
         external:true,
         order: 'random',
-        limit: 2,
+        limit: 1,
         transition: '0.3s',
         iconPath: 'img/dcsns-dark/',
         imagePath: 'img/dcsns-dark/'
