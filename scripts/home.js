@@ -7,10 +7,10 @@ $(function(){
                 thumb: true
             },
             facebook: {
-                id: '1595731843999687'
+                id: '1394483740809502'
             },
             youtube: {
-                id: 'id'
+                id: 'UC2A6gNuULMFPd107sGowphg'
             }
         },
         rotate: {
