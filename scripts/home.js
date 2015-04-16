@@ -11,7 +11,7 @@ $(function(){
             },
             youtube: {
                 id: 'UC2A6gNuULMFPd107sGowphg',
-                feed:'uploads'
+                feed:'uploads,newsubscriptionvideos'
             }
         },
         rotate: {
