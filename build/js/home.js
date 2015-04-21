@@ -8,11 +8,11 @@ $(function(){
                 images:'small'
             },
             facebook: {
-                id: '1394483740809502'
+                id: '1394483740809502,Notifications/1577813042476570'
             },
             youtube: {
                 id: 'UC2A6gNuULMFPd107sGowphg',
-                feed:'uploads,newsubscriptionvideos'
+                feed:'uploads'
             }
         },
         rotate: {

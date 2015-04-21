@@ -11,7 +11,7 @@
                 id: '1394483740809502'
             },
             youtube: {
-                id: 'irsvideos, UC2A6gNuULMFPd107sGowphg'
+                id: 'UC2A6gNuULMFPd107sGowphg'
             }
 
         },
@@ -24,7 +24,7 @@
         wall: true,
         cache: false,
         max: 'limit',
-        limit: 5,
+        limit: 10,
         transition: '0.3s',
         iconPath: 'img/dcsns-dark/',
         imagePath: 'img/dcsns-dark/'
