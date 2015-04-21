@@ -4,7 +4,8 @@
             twitter: {
                 id: '#jclawcpa,JC_LawCPA',
                 retweets: true,
-                thumb: true
+                thumb: true,
+                images:'small'
             },
             facebook: {
                 id: '1394483740809502'
