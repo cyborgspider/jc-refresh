@@ -12,7 +12,8 @@ $(function(){
             },
             youtube: {
                 id: 'UC2A6gNuULMFPd107sGowphg',
-                feed:'uploads'
+                feed:'uploads',
+                api_key:'AIzaSyAdkIRbzyBiUYacEWZfCodseXRrRTQE2ws'
             }
         },
         rotate: {
